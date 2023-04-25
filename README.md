@@ -11,6 +11,7 @@
 6. Check that both containers have been created correctly and are running.
 
 **Main code execution on the containers:**
+
 For this project, the program "main.py" was divided into 3 different sequences (main_1, main_2, main_3). The 3 programs build the dataframe that will be opened in Jupyter later and that will be used to develop the ML models.
 The first sequence creates a dataframe that comprises a dataset from 2021 to 2016 (excluding 2020, COVID shortened-season). The second sequence creates one that goes from 2015 to 2011 and the third sequence works with the datasets from 2010 to 2006, thus forming the third part of the main dataframe. Each of these mains reads the files that are grouped by year in different folders inside the Files folder.
 
