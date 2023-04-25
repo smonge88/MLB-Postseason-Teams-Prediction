@@ -29,17 +29,20 @@ Then, a list is created, where these dataframes are saved by year. Finally, the 
 
 In order to save this final dataframe and access it later, the "write" function is used to write the generated dataframes (df_final1, df_final2, and df_final3) to the Postgresql database that was executed through the other container. Then, through the Jupyter Notebook, these dataframes will be read directly from the database. A pyspark function "write.csv" is also used, which allows creating a folder called "df_final_part_X", for each of the main programs. These files will also be saved in the project container.
 
-Continuing with the list of instructions to run the code:
+**Continuing with the list of instructions to run the code:**
+
 7. Run the command "sh main_1.sh". This executes the first main sequence of the program (main_1.py). Once the instruction is complete, proceed with "sh main_2.sh". Similarly, wait for the command to execute and continue with "sh main_3.sh". Each of these commands can take several minutes to complete.
 8. Run the command "ls" and check the successful creation of the df_final_part_1, df_final_part_2, and df_final_part_3 folders. It is also recommended to enter each folder using the "cd" command and check the existence of the corresponding csv files. Remember that these files have an alphanumeric name assigned by Spark.
 
-Entering the Jupyter Notebook:
+**Entering the Jupyter Notebook:**
+
 9. Go back to the main project directory using "cd .." and enter the command "sh load_jupyter.sh".
 10. Copy the last link obtained from executing the command and paste it into your preferred browser.
 11. Once inside the main directory in Jupyter, open the "ipynb Notebook Modelos ML" file.
 12. Run all the cells in the notebook and observe the results. It's possible that the cells related to graphs or histograms may take several minutes to execute.
 
-Unitary tests:
+**Unitary tests:**
+
 13. In the running terminal window, exit Jupyter Notebook using "ctrl+c".
 14. Once back in the main directory of the container where you have been working, run the command "pytest" or "pytest -vv" to get more information about the tests performed. There are 10 unit tests, and all of them are located in the "test_functions.py" file.
 
